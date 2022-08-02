@@ -1,13 +1,146 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(-45deg, black,gray);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    position: sticky;
+    z-index: 10;
+  }
+nav.navbar {
+    text-transform: uppercase;
+    font-family: courier, sans-serif;
+    background-color: rgb(230, 29, 29);
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    padding: 23px 0 10px 0;
 }
+
+a {
+    color: white;
+    padding: 0 7px;
+}
+a:hover {
+    color: lightblue;
+}
+/*These next two are separate body parent containers*/
+#body-heading {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(27, 20, 243);
+}
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    text-decoration: underline;
+    font-family: sans-serif;
+    color: beige;
+}
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 36pt;
+    font-family: sans-serif;
+}
+h4 {
+    color: orange;
+    text-align: center;
+}
+/*These are the CSS Rules with media query for the boxes container*/
+.projects {
+    background-color: rgb(27, 20, 243);
+    display : grid;
+    grid-template-columns: 125px 125px 125px;
+    grid-template-rows: 125px 125px;
+    grid-template-areas: ".contact-info .det-cards .det-score"
+                         "#det-specs .drum-machine .rand-quote";
+    grid-gap: 20px 20px;
+}
+
+/* These next 6 are the CSS id Rules for each project */
+.contact-info {
+    background-color: white;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.det-cards {
+    background-color: aqua;
+}
+
+.cards-header{
+    color: green;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: brown;
+}
+
+.btn-group {
+    background-color: rgb(150, 100, 125);
+}
+
+.btn{
+    background-color: rgb(107, 8, 107);
+    color: cyan;
+    border-radius: 15px;
+    font-size: 10pt;
+}
+
+/*.btn:hover{
+    margin: 2em .5em .5em 2em;
+    background-color: cyan;
+    color: rgb(107, 8, 107);
+    border-radius: 15px;
+}
+*/
+.det-score {
+    background-color: gray;
+}
+
+#det-specs {
+    background-color: green;
+}
+
+.drum-machine {
+    color: white;
+    background-color: navy;
+}
+
+.rand-quote {
+    background-color: tan;
+}
+
+h6 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+h3 {
+    color: white;
+    text-align: center;
+}
+footer {
+    color: white;
+    background-color: rgb(41, 34, 34);
+    margin-bottom: 10px;
+    text-align: center;
+}
+#footerline {
+    border-bottom: 3px red solid;
+}
+
+
