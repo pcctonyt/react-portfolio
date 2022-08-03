@@ -24,7 +24,6 @@ const App = () =>  {
                   }
       }} />
       <Navbar />
-      <Contact />
       <Header />
       <Footer />
     </div>

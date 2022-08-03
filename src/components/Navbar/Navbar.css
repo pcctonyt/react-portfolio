@@ -62,21 +62,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: gray;
     padding: 1rem;
+    margin-bottom: -8rem;
   }
 
   .contact-icons {
     transform: scale(3);
-    padding: 1rem;
+    padding: 0.5rem 2rem;
   }
 
-  .contact-icons.green {
-    color: rgb(6, 52, 17);
+  .contact-icons.purple {
+    color: var(--primary-purple);
+  }
+
+  .contact-icons.purple:hover {
+    transform: scale(4);
   }
 
   .contact-icons.blue {
     color: blue;
+  }
+
+  .contact-icons.blue:hover {
+    transform: scale(4);
   }
 
   .contact h1 span {

@@ -12,14 +12,9 @@ const Contact = () => {
             <span>View my work and say hi!:</span>
         </h1>
         <div>
-            {/* <Link to="https://github.com/pcctonyt/pcctonyt"><FontAwesomeIcon className="contact-icons green" icon={faGithub} />
-            </Link>
-            <Link to="https://www.linkedin.com/in/anthony-thompson-b2a31a236/"><FontAwesomeIcon className="contact-icons blue" icon={faLinkedin} />
-            </Link>*/}
-            <FontAwesomeIcon className="contact-icons green" icon={faGithub} />
-            <FontAwesomeIcon className="contact-icons blue" icon={faLinkedin} />
+            <a href="https://github.com/pcctonyt"><FontAwesomeIcon className="contact-icons purple" icon={faGithub} /></a>
+            <a href="https://www.linkedin.com/in/anthony-thompson-b2a31a236"><FontAwesomeIcon className="contact-icons blue" icon={faLinkedin} /></a>
         </div>
-        
     </div>
   )
 }
