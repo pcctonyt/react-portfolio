@@ -4,8 +4,12 @@ import Particles from "react-tsparticles";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-function App() {
+const App = () =>  {
   
   return (
     <div>
@@ -20,6 +24,7 @@ function App() {
                   }
       }} />
       <Navbar />
+      <Contact />
       <Header />
       <Footer />
     </div>
@@ -28,4 +33,4 @@ function App() {
 
 export default App
 
-/* 1:04:23 React JS & Bootstrap | Build Portfolio App | 4k by 80/20 coding*/
+/* 1:14:00 difficulties getting react-particles running, new react-ts-particles running with ts particles installed, but didn't know how to style that div. | React JS & Bootstrap | Build Portfolio App | 4k by 80/20 coding*/

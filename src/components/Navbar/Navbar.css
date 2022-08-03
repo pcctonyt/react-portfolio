@@ -57,6 +57,31 @@
     height: 90vh;
   }
 
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    padding: 1rem;
+  }
+
+  .contact-icons {
+    transform: scale(3);
+    padding: 1rem;
+  }
+
+  .contact-icons.green {
+    color: rgb(6, 52, 17);
+  }
+
+  .contact-icons.blue {
+    color: blue;
+  }
+
+  .contact h1 span {
+    color: white;
+  }
   .main-info {
     font-family: 'Roboto', sans-serif;
     display: flex;
