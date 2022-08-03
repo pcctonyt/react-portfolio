@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className='navbar navbar-expand-lg navbar-light bg-dark'>
       <div className='container'>
         <a className='navbar-brand' href='#'>Click Me
-          {/*<img className='logo' src="./office.jpg" alt="office" />*/}
+         {/* <img className='logo' src="./components/Navbar/office.jpg" /> */} 
         </a>
         <button
           className='navbar-toggler'

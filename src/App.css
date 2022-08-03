@@ -4,6 +4,10 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: #212529;
+  --primary-yellow: rgb(215, 215, 54);
+  --primary-red: #ef4035;
+  --primary-purple: rgb(255, 0, 255);
+  --primary-hover-red: #f33501;
 }
 
 body {
