@@ -2,7 +2,8 @@ import React from "react";
 
 const DetSpecs = () => {
   return (
-    <div className="det-specs" id="specs">
+    <div className="det-specs container-fluid" id="specs">
+        <h1 className="text-center">Deterrence Technical Specifications</h1>
         <main id="main-doc">
             <section className="main-section" id="Nuclear_And_SDI_Units">
                 <header>Nuclear And SDI Units</header>

@@ -4,18 +4,22 @@ import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AboutDeterrence from "./components/AboutDeterrence/AboutDeterrence";
-//import { library } from '@fortawesome/fontawesome-svg-core'
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import Popup from "./components/Popup";
+import { useState } from "react";
 
 const App = () =>  {
-  
+  const [ buttonPopup, setButtonPopup ] = useState(false);
+
   return (
     <div>
       <Navbar />
       <Header />
       <AboutDeterrence />
       <Footer />
+      <button className="btn-main-description" onClick={() => setButtonPopup(true)}>Contact Me</button>
+      <Popup trigger={buttonPopup} setTrigger={ setButtonPopup }>
+        <h3>My Popup</h3>
+      </Popup>
     </div>
   )
 }

@@ -54,7 +54,8 @@
     background: url(C:\Users\thomp\OneDrive\Desktop\second-react1\src\grisKitten.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
+    margin-top: -10rem;
   }
 
   .contact {
@@ -62,7 +63,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
     padding-top: 10rem;
+  }
+
+  .contact.form {
+    background-color: yellow;
+    margin-top: 10rem;
   }
 
   .contact-icons {
@@ -86,11 +93,11 @@
     transform: scale(4);
   }
 
-  .contact-icons.white {
-    color: blue;
+  .contact-icons.orange {
+    color: var(--primary-orange);
   }
 
-  .contact-icons.white:hover {
+  .contact-icons.orange:hover {
     transform: scale(4);
   }
 
@@ -123,6 +130,7 @@
     font-size: 2rem;
     color: var(--primary-white);
   }
+
   /*--------------- HEADER MAIN DESCRIPTION BUTTON -----------------*/
   .btn-main-description {
     text-decoration: none;
@@ -148,7 +156,7 @@
 
 /*----------------- TEXTAREA -------------------*/
 
-/*
+
 label,
 textarea {
     font-size: .8rem;
@@ -167,7 +175,6 @@ label {
     display: block;
     margin-bottom: 10px;
 }
-*/
 
 .about-deterrence {
   background-color: green;
@@ -250,9 +257,20 @@ p {
   padding: 0 8px;
   margin: 5px 0;
 }
+/* -------- FOR THE DET CARDS COMPONENT ----- */
+
+.det-cards{
+  margin-top: 2rem;
+}
+.text-center{
+  text-align: center;
+}
 
 /* -------- FOR THE DET SPECS COMPONENT ----- */
 
+.det-specs {
+  margin: 10rem 15rem 0 0;
+}
 .main-section {
   border-width: 5px;
   border-color: white;
@@ -261,9 +279,8 @@ p {
 } 
 
 #main-doc {
-  margin-left: 250px;
   display: grid;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 560px 560px;
   grid-template-columns: 300px 300px 300px;
   grid-template-areas: ". #Nuclear_And_SDI_Units #Treaty_Chart"
                          ". #Score_Sheet #Complete_Turns";
@@ -329,4 +346,31 @@ p {
     height: 100vh;
     width: 100vw;
     z-index: 1;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-inner {
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    max-width: 40rem;
+    background-color: #fff;
+  }
+
+  .popup-inner.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }

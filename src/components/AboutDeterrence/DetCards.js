@@ -3,6 +3,7 @@ import React from "react";
 const DetCards = () => {
   return (
     <div className="det-cards" id="cards">
+        <h1 className="text-center">Example Deterrence Card</h1>
         <div className="label">
             <header>
                 <h1 className="bold">Strategic Nuclear Unit</h1>
@@ -40,13 +41,13 @@ const DetCards = () => {
                     <p>1. Fixed Nuclear Units are only destroyed by opposing Units, they cannot be captured.</p>
                     <p>2. The opponent landing on that square removes it without points.</p>
                     <p>3. The player losing the SN loses no Cash Value Points.</p>
-                    <p>4. The destroyed square in a Firing Move becomes a Fallout Square, off-limits to all ground-landing Units.</p>
+                    <p>4. The destroyed squares in a Firing Move become Fallout Squares, off-limits to all ground-landing Units.</p>
                     <p className="no-divider"><span className="bold">General Rules for Nuclear Units</span></p>
                 <div className="divider lg"></div>
                     <p>1. To Fire a Nuclear Unit, it must have been previously Armed.</p>
                     <p>2. Armed Units can be fired unaccompanied within given ranges.</p>
                     <p>3. The Unit fired is removed from the board and the firing player loses those Cash Value Points (for Mobile Units).</p>
-                    <p>4. The other player's destroyed Units are reomved from the board and all the resulting Cash Value Points are lost.</p>
+                    <p>4. The other player's destroyed Units are removed from the board and all the resulting Cash Value Points are lost.</p>
                     <p>5. All applicable Score Sheet Game Points must be tallied by both players.</p>
                     <p>6. Nuclear Units cannot destroy any Units on squares protected by Fixed SDI Defense.</p>
                     <p>7. Nuclear Units cannot destroy a Unit paired with a Mobile SDI Defense Unit</p>

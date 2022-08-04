@@ -14,23 +14,17 @@ const ContactForm = () => {
             setInputtedMessage("");
         }
 
-        const handleChange = (e) => {
-            let { name, value } = e.target;
-            setInputtedName(e.target.inputtedName);
-            setInputtedEmail(e.target.inputtedEmail);
-            setInputtedMessage(e.target.inputtedMessage);
-        }
-
   return (
     <div id="form">
-        <div className="contact">
-                <button className="btn btn-primary">Open Form</button>
+        <div className="form">
                 <form onSumbit={handleSubmit}>
                     <h1>Contact Information Form</h1>
-                    <input type="text" name="inputtedName" value={inputtedName} onChange={handleChange} placeholder="Please enter your name:" required />{inputtedName}
-                    <input type="email" name="inputtedEmail" value={inputtedEmail} onChange={handleChange} placeholder="Please enter a valid email address:" required/>{inputtedEmail}
-                    <label for="inputtedMessage">Leave me a message if you like!  I'll get back to you as soon as I can, thank-you!</label>
-                    <textarea rows="5" cols="20" name="inputtedMessage" value={inputtedMessage} placeholder="Enter your message here:">{inputtedMessage}</textarea>
+                    <label htmlFor="inputtedName">{inputtedName}
+                    <input type="text" id ="inputtedName" name="inputtedName" value={inputtedName} onChange={(e) => setInputtedName(e.target.value)} placeholder="Please enter your name:" required /></label>
+                    <label htmlFor="inputtedEmail">{inputtedEmail}<input type="email" id="inputtedEmail" name="inputtedEmail" value={inputtedEmail} onChange={(e) => setInputtedEmail(e.target.value)} placeholder="Please enter a valid email address:" required/></label>
+                    
+                    <label for="inputtedMessage">{inputtedMessage}Leave me a message if you like!  I'll get back to you as soon as I can, thank-you!<textarea rows="5" cols="20" name="inputtedMessage" id="inputtedMessage" value={inputtedMessage} onChange={(e) => setInputtedMessage(e.target.value)}placeholder="Enter your message here:"></textarea></label>
+                    
                     <button className="btn btn-success" type="submit">Submit</button>
                 </form>
         </div>
