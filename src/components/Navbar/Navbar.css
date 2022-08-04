@@ -62,8 +62,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    margin-bottom: -8rem;
+    padding-top: 10rem;
   }
 
   .contact-icons {
@@ -87,9 +86,18 @@
     transform: scale(4);
   }
 
+  .contact-icons.white {
+    color: blue;
+  }
+
+  .contact-icons.white:hover {
+    transform: scale(4);
+  }
+
   .contact h1 span {
     color: white;
   }
+  
   .main-info {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -137,6 +145,161 @@
   .bold-text {
     font-weight: 800;
   }
+
+/*----------------- TEXTAREA -------------------*/
+
+/*
+label,
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+*/
+
+.about-deterrence {
+  background-color: green;
+  color: white;
+}
+
+.label {
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+}
+
+header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px
+}
+
+p {
+  margin: 0;
+}
+
+.divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+  clear: right;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.right {
+  float: right;
+}
+
+.lg {
+  height: 10px;
+}
+
+.lg, .md {
+  background-color: black;
+  border: 0;
+}
+
+.md {
+  height: 5px;
+}
+
+.sm-text {
+  font-size: 0.85rem;
+}
+
+.units-info h1 {
+  margin: -5px -2px;
+  overflow: hidden;
+}
+
+.units-info span {
+  font-size: 1.2em;
+  margin-top: -7px;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.dbl-indent {
+  margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+
+.note {
+  font-size: 0.6rem;
+  text-indent: -8px;
+  padding: 0 8px;
+  margin: 5px 0;
+}
+
+/* -------- FOR THE DET SPECS COMPONENT ----- */
+
+.main-section {
+  border-width: 5px;
+  border-color: white;
+  border-style: solid;
+  padding-bottom: 3px;
+} 
+
+#main-doc {
+  margin-left: 250px;
+  display: grid;
+  grid-template-rows: 400px 400px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-areas: ". #Nuclear_And_SDI_Units #Treaty_Chart"
+                         ". #Score_Sheet #Complete_Turns";
+}
+
+#Nuclear_And_SDI_Units {
+  color:green;
+  font-size: 14pt;
+  font-family: sans-serif;
+  background-color: yellow;
+}
+
+#Treaty_Chart {
+  color: yellow;
+  background-color:blue;
+}
+
+#Score_Sheet {
+  color: purple;
+  background-color: lime;
+}
+
+#Complete_Turns {
+  color:yellow;
+  background-color: red;
+}
+
+#Points_Types {
+  color: cyan;
+  background-color:purple;
+}
+
+#Code_Examples {
+  color: purple;
+  background-color: darkorange;
+}
 
 /*----------------- FOOTER -------------------*/
 

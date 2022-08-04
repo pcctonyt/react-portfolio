@@ -1,7 +1,7 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import './Navbar.css'
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -24,33 +24,31 @@ const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
-              <a className='nav-link' aria-current='page' href='#'>
+              <a className='nav-link' aria-current='page' href='#navbarNav'>
                 Home
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                About Deterrence
+              <a className='nav-link' href='#cards'>
+                Example Deterrence Information Card
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                Skills
+              <a className='nav-link' href='#specs'>Deterrence General Information
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                How I Work
+              <a className='nav-link' href='#deterrence'>About Deterrence
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                Portfolio
+              <a className='nav-link' href='#form'>
+                Form to provide your contact information:
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                Contacts
+              <a className='nav-link' href='#icons'>
+                Links to contact me
               </a>
             </li>
           </ul>
@@ -60,4 +58,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
