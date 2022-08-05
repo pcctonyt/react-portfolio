@@ -8,8 +8,10 @@
   --primary-red: #ef4035;
   --primary-purple: rgb(255, 0, 255);
   --primary-hover-red: #f33501;
+  --primary-brown: brown;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-dark);
 }
