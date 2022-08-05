@@ -1,0 +1,34 @@
+  /*----- TO SYLE THE CONTACT FORM ----*/
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    padding-top: 22rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #fff, yellow);
+    padding: .5rem;
+    margin-top: -3rem;
+    border-radius: 1.25rem;
+    border: 0.3125rem solid rgb(255, 100, 0);
+  }
+  .contact-input {
+    border-radius: .3125rem;
+    background-color: var(--primary-orange);
+    color: var(--primary-dark);
+  }
+  .submit-btn {
+    border: .1675rem solid var(--primary-dark);
+  }
+
+  .form h1 {
+    color: rgb(255, 100, 0)
+  }

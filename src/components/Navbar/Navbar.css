@@ -58,67 +58,6 @@
     margin-top: -10rem;
   }
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-    padding-top: 22rem;
-  }
-
-  .form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: yellow;
-    padding: 1rem;
-    margin-top: -1.2rem;
-  }
-
-  .form h1 {
-    color: rgb(255, 100, 0)
-  }
-/* need to fix the linking on the icons, links are there, just not matching up with cursor */
-  .contact-icons {
-    transform: scale(3);
-    padding: 2rem 5.5rem;
-  }
-
-  .contact-icons.purple {
-    color: var(--primary-purple);
-  }
-
-  .contact-icons.purple:hover {
-    transform: scale(4);
-  }
-
-  .contact-icons.blue {
-    color: blue;
-  }
-
-  .contact-icons.blue:hover {
-    transform: scale(4);
-  }
-
-  .contact-icons.orange {
-    color: var(--primary-orange);
-  }
-
-  .contact-icons.orange:hover {
-    transform: scale(4);
-  }
-
-  .contact-icons.brown {
-    padding: 0 .9rem;
-    color: var(--primary-brown);
-  }
-
-  .contact h1 span {
-    color: white;
-  }
-  
   .main-info {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -134,7 +73,8 @@
   }
 
   .main-info h1 {
-    color: var(--primary-purple);
+    color: rgb(119, 17, 119);
+    font-weight: bold;
     text-transform: uppercase;
   }
 
@@ -148,13 +88,17 @@
   /*--------------- MAIN DESCRIPTION BUTTON -----------------*/
   .popup-btn-group {
     display: flex;
-    height: 15rem;
+    height: 7rem;
     width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: rgb(91, 91, 161);
     padding: 2rem;
+  }
+
+  .popup-btn-group h1{
+    color: var(--primary-orange);
   }
   
   .btn-main-description {
@@ -189,7 +133,7 @@ textarea {
 }
 textarea {
     background-color: var(--primary-orange);
-    color: var(--primary-white);
+    color: var(--primary-dark);
     padding: 10px;
     max-width: 100%;
     line-height: 1.5rem;
@@ -293,62 +237,7 @@ p {
   text-align: center;
 }
 
-/* -------- FOR THE DET SPECS COMPONENT ----- */
-
-.det-specs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.main-section {
-  border-width: 5px;
-  border-color: white;
-  border-style: solid;
-  padding-bottom: 3px;
-} 
-
-#main-doc {
-  margin-bottom: 1rem;
-  display: grid;
-  grid-template-rows: 560px 560px;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-areas: ". #Nuclear_And_SDI_Units #Treaty_Chart"
-                         ". #Score_Sheet #Complete_Turns";
-}
-
-#Nuclear_And_SDI_Units {
-  color:green;
-  font-size: 14pt;
-  font-family: sans-serif;
-  background-color: yellow;
-}
-
-#Treaty_Chart {
-  color: yellow;
-  background-color:blue;
-}
-
-#Score_Sheet {
-  color: purple;
-  background-color: lime;
-}
-
-#Complete_Turns {
-  color:yellow;
-  background-color: red;
-}
-
-#Points_Types {
-  color: cyan;
-  background-color:purple;
-}
-
-#Code_Examples {
-  color: purple;
-  background-color: darkorange;
-}
-
-/*----------------- FOOTER -------------------*/
+/*-------------- FOOTER ---------------*/
 
   footer {
     color: white;
@@ -384,16 +273,18 @@ p {
 
   .popup-inner {
     position: relative;
-    padding: .5rem;
+    padding: -1rem;
     height: 40vh;
     width: 80%;
     max-width: 40rem;
     background-color: #fff;
-    margin-top: 11rem;
+    margin-top: 13rem;
+    border-radius: .625rem;
   }
 
   .popup-inner.close-btn {
     position: absolute;
     top: .5rem;
-    right: 1rem;
+    right: .5rem;
+    margin-top: -1rem;
   }

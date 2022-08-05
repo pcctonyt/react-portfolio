@@ -1,0 +1,38 @@
+/* need to fix the linking on the icons, links are there, just not matching up with cursor */
+.contact-icons {
+    transform: scale(3);
+    padding: 2rem 5.5rem;
+  }
+
+  .contact-icons.purple {
+    color: var(--primary-purple);
+  }
+
+  .contact-icons.purple:hover {
+    transform: scale(4);
+  }
+
+  .contact-icons.blue {
+    color: blue;
+  }
+
+  .contact-icons.blue:hover {
+    transform: scale(4);
+  }
+
+  .contact-icons.orange {
+    color: var(--primary-orange);
+  }
+
+  .contact-icons.orange:hover {
+    transform: scale(4);
+  }
+
+  .contact-icons.brown {
+    padding: 0 .9rem;
+    color: var(--primary-brown);
+  }
+
+  .contact h1 span {
+    color: white;
+  }

@@ -1,0 +1,52 @@
+.det-specs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-section {
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    padding-bottom: 3px;
+  } 
+  
+  #main-doc {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-rows: 560px 560px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas: ". #Nuclear_And_SDI_Units #Treaty_Chart"
+                           ". #Score_Sheet #Complete_Turns";
+  }
+  
+  #Nuclear_And_SDI_Units {
+    color:green;
+    font-size: 14pt;
+    font-family: sans-serif;
+    background-color: yellow;
+  }
+  
+  #Treaty_Chart {
+    color: yellow;
+    background-color:blue;
+  }
+  
+  #Score_Sheet {
+    color: purple;
+    background-color: lime;
+  }
+  
+  #Complete_Turns {
+    color:yellow;
+    background-color: red;
+  }
+  
+  #Points_Types {
+    color: cyan;
+    background-color:purple;
+  }
+  
+  #Code_Examples {
+    color: purple;
+    background-color: darkorange;
+  }

@@ -4,6 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons/faEnvelopeOpenText";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./ContactIcons.css";
 
 const ContactIcons = () => {
   return (

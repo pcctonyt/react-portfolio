@@ -1,4 +1,5 @@
 import React from "react";
+import "./DetSpecs.css";
 
 const DetSpecs = () => {
   return (

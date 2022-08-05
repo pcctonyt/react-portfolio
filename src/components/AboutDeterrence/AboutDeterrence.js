@@ -1,7 +1,7 @@
 import React from "react";
 import DetCards from "./DetCards";
 import DetSpecs from "./DetSpecs";
-import "./AboutDeterrence";
+import "./AboutDeterrence.css";
 
 const AboutDeterrence = () => {
   return (
