@@ -9,6 +9,10 @@
     padding-top: 22rem;
   }
 
+  .contact-heading {
+    margin-top: 2rem;
+  }
+
   .form {
     display: flex;
     flex-direction: row;
@@ -25,6 +29,10 @@
     background-color: var(--primary-orange);
     color: var(--primary-dark);
   }
+
+  .submit-btn-wrapper {
+    margin: 1rem;
+  }
   .submit-btn {
     border: .1675rem solid var(--primary-dark);
   }
@@ -32,3 +40,33 @@
   .form h1 {
     color: rgb(255, 100, 0)
   }
+
+  /*-FOR THE TEXTAREA FOR THE CONTACT FORM--*/
+
+label,
+textarea {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+textarea {
+    background-color: var(--primary-orange);
+    color: var(--primary-dark);
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.label {
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+}

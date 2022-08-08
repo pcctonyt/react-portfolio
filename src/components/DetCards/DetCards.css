@@ -1,28 +1,8 @@
-/*---- FOR THE ABOUT DETERRENCE POPUP ---- */
-
-  .about-deterrence {
-    margin-top: 2rem;
-    background-color: green;
-    color: white;
-    border-radius: .625rem;
-  }
-  @media(max-width: 400px){
-    .about-deterrence{
-      max-width: 80vw;
-    }
-  }
-
-  .label {
-    border: 2px solid black;
-    width: 270px;
-    margin: 20px auto;
-    padding: 0 7px;
-  }
-  
-  header h1 {
-    text-align: center;
-    margin: -4px 0;
-    letter-spacing: 0.15px
+/*------FOR THE DET CARDS SECTION----------*/
+.det-cards{
+    margin-top: .5rem;
+    background-color: rgb(44, 44, 126);
+    color: var(--primary-white);
   }
   
   p {
@@ -88,3 +68,4 @@
     padding: 0 8px;
     margin: 5px 0;
   }
+  

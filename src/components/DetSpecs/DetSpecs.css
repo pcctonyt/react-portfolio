@@ -18,6 +18,17 @@
     grid-template-areas: ". #Nuclear_And_SDI_Units #Treaty_Chart"
                            ". #Score_Sheet #Complete_Turns";
   }
+
+  @media(max-width: 400px){
+    #main-doc{
+      font-size: 10px;
+      display: grid;
+      grid-template-columns: 280px;
+      grid-template-rows: repeat(6, 250px);
+      grid-template-areas: "#Nuclear_And_SDI_Units #Treaty_Chart"
+      ". #Score_Sheet #Complete_Turns"
+    }
+  }
   
   #Nuclear_And_SDI_Units {
     color:green;

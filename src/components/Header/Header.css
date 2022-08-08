@@ -1,0 +1,51 @@
+/*----------------- HEADER -------------------*/
+
+.header-wrapper {
+    position: relative;
+    background: url(C:\Users\thomp\OneDrive\Desktop\second-react1\src\AllImages\grisKitten.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: -10rem;
+  }
+@media(max-width: 400px){
+  .header-wrapper.typed-text h1{
+      font-size: smaller;
+      max-width: 90%;
+  }
+  .header-wrapper {
+    margin-top: -4rem;
+  }
+}
+
+  header h1 {
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px
+  }
+
+  .main-info {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    top: -17rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-info h1 {
+    color: rgb(119, 17, 119);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .typed-text {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    color: var(--primary-orange);
+  }

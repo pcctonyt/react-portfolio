@@ -1,7 +1,29 @@
 /* need to fix the linking on the icons, links are there, just not matching up with cursor */
+.contact {
+  margin-top: 10rem;
+  padding-top: 22rem;
+}
+@media(max-width: 400px){
+  .contact {
+    margin-bottom: -5rem;
+  }
+}
+
+.greeting {
+  margin-bottom: 2rem;
+}
+
+.icon-layout {
+  margin-top: 1rem;
+  padding: 1rem 5rem;
+}
+
+@media(max-width: 400px){
+  .icon-layout{padding: 3rem;}
+}
+
 .contact-icons {
     transform: scale(3);
-    padding: 2rem 5.5rem;
   }
 
   .contact-icons.purple {
@@ -9,6 +31,7 @@
   }
 
   .contact-icons.purple:hover {
+    color: var(--primary-orange);
     transform: scale(4);
   }
 
@@ -17,6 +40,7 @@
   }
 
   .contact-icons.blue:hover {
+    color: var(--primary-red);
     transform: scale(4);
   }
 
@@ -25,12 +49,8 @@
   }
 
   .contact-icons.orange:hover {
+    color: var(--primary-purple);
     transform: scale(4);
-  }
-
-  .contact-icons.brown {
-    padding: 0 .9rem;
-    color: var(--primary-brown);
   }
 
   .contact h1 span {

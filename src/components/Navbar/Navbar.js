@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-dark'>
       <div className='container'>
-        <a className='navbar-brand' href='#'>Click Me
+        <a className='navbar-brand' href='#navbarNav'>Click Me
          {/* <img className='logo' src="./components/Navbar/office.jpg" /> */} 
         </a>
         <button

@@ -9,13 +9,13 @@ import "./ContactIcons.css";
 const ContactIcons = () => {
   return (
     <div className="contact" id="icons">
-        <h1>
+        <h1 className="greeting">
             <span>View my work and say hi!:</span>
         </h1>
         <div>
-          <a href="https://www.google.com/webhp?authuser=1"><FontAwesomeIcon className="contact-icons orange" icon={ faEnvelopeOpenText} /></a>
-            <a href="https://github.com/pcctonyt"><FontAwesomeIcon className="contact-icons purple" icon={ faGithub } /></a>
-            <a href="https://www.linkedin.com/in/anthony-thompson-b2a31a236"><FontAwesomeIcon className="contact-icons blue" icon={ faLinkedin } /></a>
+          <span className="icon-layout"><a href="https://www.google.com/webhp?authuser=1"><FontAwesomeIcon className="contact-icons orange" icon={ faEnvelopeOpenText} /></a></span>
+          <span className="icon-layout"><a href="https://github.com/pcctonyt"><FontAwesomeIcon className="contact-icons purple" icon={ faGithub } /></a></span>
+          <span className="icon-layout"><a href="https://www.linkedin.com/in/anthony-thompson-b2a31a236"><FontAwesomeIcon className="contact-icons blue" icon={ faLinkedin } /></a></span>
         </div>
     </div>
   )
