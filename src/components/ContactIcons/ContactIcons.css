@@ -17,9 +17,14 @@
   margin-top: 1rem;
   padding: 1rem 5rem;
 }
+@media(max-width: 500px){
+  .icon-layout{
+    padding: 2rem;
+  }
+}
 
 @media(max-width: 400px){
-  .icon-layout{padding: 3rem;}
+  .icon-layout{padding: 2rem;}
 }
 
 .contact-icons {

@@ -1,7 +1,26 @@
   /*------ FOR THE NAVBAR -----------*/
   nav {
     z-index: 2;
+    border: 2px solid var(--primary-yellow);
+    border-radius: 1.25rem;
   }
+
+  .container {
+    border-radius: 1.25rem;
+    border: 2px solid var(--primary-orange);
+    background-color: var(--primary-red);
+  }
+
+  .navbar-toggler {
+    color: var(--primary-orange);
+    background-color: var(--primary-orange);
+  }
+  @media(min-width: 750px){
+    .navbar-toggler{
+      
+    }
+  }
+
   .logo {
     width: 16.25rem;
   }
@@ -19,8 +38,8 @@
   .navbar-nav li a {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
-    color: var(--primary-white) !important;
-    border-top: 0.1875rem solid var(--primary-dark);
+    color: var(--primary-brown) !important;
+    font-weight: bold;
   }
 
   .navbar-brand {
@@ -29,7 +48,7 @@
     height: 4rem !important;
     background: url(C:\Users\thomp\OneDrive\Desktop\second-react1\src\AllImages\office.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     border-radius: .625rem;
   }
 

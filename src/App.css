@@ -1,4 +1,4 @@
-/* ------ MAIN CSS ------------ */
+/* ------ MAIN CSS ---------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
@@ -11,11 +11,19 @@
   --primary-purple: rgb(255, 0, 255);
   --primary-hover-red: #f33501;
   --primary-brown: brown;
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+@media(max-width: 400px){
+  #root {
+    margin-right: 4.5rem;
+  }
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--primary-dark);
+  height: 100vh;
 }
 
 .bold-text {
@@ -50,33 +58,78 @@ body {
   background-color: var(--primary-purple);
   font-weight: bold;
 }
-
-.popup-btn-group h1{
-  color: var(--primary-orange);
+.contact-btn-wrapper {
+  padding: 0 1.5rem;
 }
-
 .popup-btn-group {
   display: flex;
-  height: 7rem;
+  height: 10rem;
   width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: rgb(91, 91, 161);
-  padding: 2rem;
+  padding: 2.5rem;
+  border: 2px solid rgb(35, 8, 92);
+  border-radius: 1.25rem;
 }
 
 @media(max-width: 400px){
   .popup-btn-group{
-    padding: 4rem;
+    padding: 1.5rem;
+    height: 1rem;
     display: flex;
     height: 21rem;
     flex-direction: column;
     justify-content: center;
-    margin-top: -2rem;
+    margin: 0.25rem 0;
   }
-  .btn-main-description{
+}
+
+.button-header {
+  color: rgb(35, 8, 92);
+  font-weight: bold;
+  background-color: rgb(91, 91, 161);
+  text-align: center;
+  border: 2px solid rgb(35, 8, 92);
+  border-radius: 1.25rem;
+  border-bottom: none;
+}
+
+.popup-btn-group h1{
+  color: var(--primary-orange);
+}
+@media(max-width: 650px){
+  .popup-btn-group h1{
+    display: relative;
+  }
+
+  .contact-btn-wrapper {
     padding: .6rem;
+    margin: -.4rem;
+  }
+
+  .btn-main-description{
+    padding: .3rem;
     color: var(--primary-dark);
+  }
+
+  #score{
+    margin-right: 3.5rem;
+  }
+  
+  #det-card {
+    margin-left: 3rem;
+  }
+}
+@media(max-width: 400px){
+  #score{
+    margin-right: 0;
+  }
+  #det-card{
+    margin-left: 0;
+  }
+  .button-header{
+    border-bottom: none;
   }
 }

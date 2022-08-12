@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import DetCards from "./components/DetCards/DetCards";
 import DetSpecs from "./components/DetSpecs/DetSpecs";
+import ScoreSheet from "./components/ScoreSheet/ScoreSheet";
 import Popup from "./components/Popup/Popup";
 import AboutDeterrence from "./components/AboutDeterrence/AboutDeterrence";
 import ContactForm from "./components/ContactForm/ContactForm";
@@ -18,6 +19,8 @@ const App = () =>  {
 
   const [ infoPopup, setInfoPopup ] = useState(false);
 
+  const [scorePopup, setScorePopup ] = useState(false);
+
   const [ contactTimed, setContactTimed ] = useState(false);
 
     useEffect(() => {
@@ -27,29 +30,43 @@ const App = () =>  {
     }, []);
 
   return (
-    <div className="container-fluid">
+    <div>
       <Navbar />
       <Header />
+      <h1 className="button-header">Click a button to learn more!</h1>
             <div className="popup-btn-group">
-            <h1>Click a button to learn more!</h1>
-                <button className="btn-main-description" onClick={() => setCardPopup(true)}>Deterrence Information Card</button>
-              <Popup trigger={cardPopup} setTrigger={ setCardPopup }>
-                <DetCards className="about-deterrence" />
-              </Popup>
+            
+              <span className="contact-btn-wrapper">
+                <button className="btn-main-description" id="det-card" onClick={() => setCardPopup(true)}>Deterrence Information Card</button>
+                <Popup trigger={cardPopup} setTrigger={ setCardPopup }>
+                  <DetCards className="about-deterrence" />
+                </Popup>                
+              </span>
 
-              <button className="btn-main-description" onClick={() => setInfoPopup(true)}>Deterrence General Information</button>
-              <Popup trigger={infoPopup} setTrigger={ setInfoPopup }>
-                <DetSpecs />
-              </Popup>
+              <span className="contact-btn-wrapper">
+                <button className="btn-main-description" onClick={() => setInfoPopup(true)}>Deterrence General Information</button>
+                <Popup trigger={infoPopup} setTrigger={ setInfoPopup }>
+                  <DetSpecs />
+                </Popup>
+              </span>
 
-              <button className="btn-main-description" onClick={() => setAboutPopup(true)}>More About Deterrence</button>
-              <Popup trigger={aboutPopup} setTrigger={ setAboutPopup }>
-                <AboutDeterrence />
-              </Popup>
+              <span className="contact-btn-wrapper">
+                <button className="btn-main-description" onClick={() => setAboutPopup(true)}>Deterrence General Overview</button>
+                <Popup trigger={aboutPopup} setTrigger={ setAboutPopup }>
+                  <AboutDeterrence />
+                </Popup>
+              </span>
 
-              <Popup trigger={contactTimed} setTrigger={setContactTimed}>
+                <span className="contact-btn-wrapper">
+                  <button className="btn-main-description" id="score" onClick={() => setScorePopup(true)}>Deterrence Score Sheet v5.1.0</button>
+                  <Popup trigger={scorePopup} setTrigger={ setScorePopup }>
+                    <ScoreSheet />
+                  </Popup>
+                </span>              
+              
+                <Popup trigger={contactTimed} setTrigger={setContactTimed}>
                 <ContactForm />
-              </Popup>
+                </Popup> 
             </div>
       <Footer />
     </div>
@@ -57,5 +74,3 @@ const App = () =>  {
 }
 
 export default App
-
-/* 1:14:00 difficulties getting react-particles running, new react-ts-particles running with ts particles installed, but didn't know how to style that div. | React JS & Bootstrap | Build Portfolio App | 4k by 80/20 coding*/

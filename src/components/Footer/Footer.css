@@ -1,16 +1,22 @@
 /*-------------- FOOTER ---------------*/
 
-footer {
+  .footer-bottom {
     color: white;
     background-color: rgb(41, 34, 34);
     text-align: center;
+    border-radius: 1.25rem;
   }
-  .top {
+
+  .footer-top {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: hsl(40 80% 40%);
+    margin-bottom: -1rem;
+    border: 2px solid brown;
+    border-radius: 1.25rem;
   }
+
   @media(max-width: 400px){
     .top{
       display: flex;
@@ -19,6 +25,13 @@ footer {
       align-items: center;
       padding-bottom: 1.5rem;
     }
+    .contact-icons.brown{
+      padding-right: 1.25rem;
+    }
+
+    h6 {
+      padding-right: 2.25rem;
+    }
   }
 
   .coffee-cup-wrapper {
@@ -26,15 +39,15 @@ footer {
   }
   
   #footerline {
-    border-bottom: 3px red solid;
+    border-bottom: 5px var(--primary-orange) solid;
   }
 
   h2, h6 {
     margin-top: 1.5rem;
     text-align: center;
-    color: white;
+    color: var(--primary-white);
   }
 
   .contact-icons.brown {
-    color: brown;
+    color: var(--primary-brown);
   }

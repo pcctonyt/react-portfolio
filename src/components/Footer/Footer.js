@@ -6,12 +6,12 @@ import "./Footer.css";
 const Footer = () => {
     return(
         <div>
-            <div className="top">
+            <div className="footer-top">
                 <h2>Let's work together...</h2>
                 <h6><em>How do you take your coffee?</em></h6>
                 <div className="coffee-cup-wrapper"><FontAwesomeIcon className="contact-icons brown" icon={ faCoffee }/></div>
             </div>
-            <footer>
+            <footer className="footer-bottom">
             <hr id="footerline" />
             <p>Copyright Information goes here. Created for Banyan Labs OJT</p>
             </footer>
