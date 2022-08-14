@@ -2,6 +2,7 @@
 
   .about-deterrence {
     margin-top: 2rem;
+    padding: 3rem 0;
     background-color: green;
     color: white;
     border-radius: .625rem;
@@ -25,6 +26,29 @@
     letter-spacing: 0.15px
   }
   
+  .overview-text {
+    font-weight: bold;
+    color: red;
+  }
+
+  .text-bold{
+    font-weight: bold;
+    color: purple;
+  }
+
+  .text-bold.nuclear {
+    color: yellow;
+  }
+
+  .text-bold.treaty {
+    color: rgb(66, 3, 149);
+  }
+
+  .text-bold.points {
+    color: orange;
+    font-size: 1.8rem;
+  }
+
   p {
     margin: 0;
   }

@@ -37,11 +37,11 @@ const AddRespondingTurn = () => {
                     <label htmlFor="scoredPoints">Scored Points Bonuses or Penalties Total:<br /></label>
                     <input type="number" value={scoredPoints} onChange={(e) => setScoredPoints(e.target.value)} placeholder="Enter Points Scored..." />
                 </span>
-                <span className="form-control">
+                <span className="form-control add-response-points">
                     <label htmlFor="cashPoints">Cash Value Points Earned:<br /></label>
                     <input type="number" value={cashPoints} onChange={(e) => setCashPoints(e.target.value)} placeholder="Enter New Cash Value Points..." />
                 </span>
-                <button className="btn">Add Starting Turn</button>
+                <button className="btn">Add Responding Turn</button>
             </form>
         </span>
     )

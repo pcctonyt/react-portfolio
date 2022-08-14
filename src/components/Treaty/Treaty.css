@@ -1,0 +1,48 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(98, 66, 130);
+}
+
+.treaty-wrapper {
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  grid-template-rows: 25rem 25rem;
+  grid-template-areas: "#section-1 #section-2 #section-3"
+                        "#section-4 #section-5 #section-6";
+  background-color: cyan;
+  grid-gap: 1rem;
+}
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 2.5rem auto;
+  gap: 0.5rem;
+  padding: .125rem;
+}
+
+input[type=number]{
+  border: 1px solid red;
+  border-radius: .325rem;
+  font-size: 1.1rem;
+}
+
+h4, h5 {
+  font-size: 1.2rem;
+}

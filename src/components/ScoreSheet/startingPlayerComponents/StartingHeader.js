@@ -2,7 +2,7 @@ import React from "react";
 
 const StartingHeader = () => {
     return (
-        <h2 className="score-text-center">
+        <h2 className="score-text-center starter">
             Starting Player's Score Sheet
         </h2>
     )

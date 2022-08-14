@@ -1,0 +1,14 @@
+.section-five-wrapper {
+    background-color: gray;
+    border: .3125rem solid rgb(78, 70, 70);
+    border-radius: .625rem;
+}
+
+.five {
+    text-align: center;
+    color: black;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}

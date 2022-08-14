@@ -26,27 +26,27 @@ const ScoreSheet = () => {
           <header className="app-header">
             <h1>Deterrence Score Sheet</h1>
           </header>
-          <span>
-            <StartingHeader />
-          </span>
-          <span className="container">
-            <StartingScore />
-            <StartingCash />
-            <StartPlusMinusPoints />
-            <StartTurnList />
-            <AddStartingTurn />
-          </span>
-          <hr className="sheet-separator"/>
-          <span>
-          <RespondingHeader />
-          </span>
-          <span className="container">
+          
+            <span className="score-container starter">
+              <StartingHeader />
+              <StartingScore />
+              <StartingCash />
+              <StartPlusMinusPoints />
+              <StartTurnList />
+              <AddStartingTurn />
+            </span>
+            <span className="score-container responder">
+            <RespondingHeader />
             <RespondingScore />
             <RespondingCash />
             <RespondPlusMinusPoints />
             <RespondTurnList />
             <AddRespondingTurn />
           </span>
+        
+          
+          
+          
       </div>
     </GlobalProvider>
   )

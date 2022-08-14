@@ -16,7 +16,7 @@
 
 @media(max-width: 400px){
   #root {
-    margin-right: 4.5rem;
+    margin-right: 1rem;
   }
 }
 
@@ -24,6 +24,11 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--primary-dark);
   height: 100vh;
+}
+@media(max-width: 400px){
+  body {
+    margin-right: 3.5rem;
+  }
 }
 
 .bold-text {
@@ -47,7 +52,7 @@ body {
   padding: .5rem;
   border: 0.3125rem solid var(--primary-purple);
   background-color: var(--primary-yellow);
-  color: var(--primary-purple);
+  color: var(--primary-dark);
   border-radius: 1.25rem;
   text-transform: uppercase;
 }
@@ -68,7 +73,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgb(91, 91, 161);
+  background: linear-gradient( rgb(35, 8, 92), rgb(91, 91, 161));
   padding: 2.5rem;
   border: 2px solid rgb(35, 8, 92);
   border-radius: 1.25rem;
@@ -76,10 +81,9 @@ body {
 
 @media(max-width: 400px){
   .popup-btn-group{
-    padding: 1.5rem;
-    height: 1rem;
+    padding: .7rem;
+    height: 27rem;
     display: flex;
-    height: 21rem;
     flex-direction: column;
     justify-content: center;
     margin: 0.25rem 0;
@@ -87,9 +91,9 @@ body {
 }
 
 .button-header {
-  color: rgb(35, 8, 92);
+  color: rgb(167, 67, 39);
   font-weight: bold;
-  background-color: rgb(91, 91, 161);
+  background-color: rgb(183, 172, 87);
   text-align: center;
   border: 2px solid rgb(35, 8, 92);
   border-radius: 1.25rem;
@@ -99,7 +103,7 @@ body {
 .popup-btn-group h1{
   color: var(--primary-orange);
 }
-@media(max-width: 650px){
+@media(max-width: 750px){
   .popup-btn-group h1{
     display: relative;
   }
@@ -110,19 +114,23 @@ body {
   }
 
   .btn-main-description{
-    padding: .3rem;
+    padding: .7rem;
     color: var(--primary-dark);
   }
 
-  #score{
+  #treaty{
     margin-right: 3.5rem;
   }
   
   #det-card {
-    margin-left: 3rem;
+    margin-left: 3.2rem;
+    padding-left: 0;
   }
 }
 @media(max-width: 400px){
+  body {
+    margin-left: .2rem;
+  }
   #score{
     margin-right: 0;
   }
@@ -131,5 +139,8 @@ body {
   }
   .button-header{
     border-bottom: none;
+  }
+  #treaty{
+    margin-left: 3rem;
   }
 }

@@ -1,0 +1,11 @@
+.section-four-wrapper {
+    background-color: blueviolet;
+    border: .3125rem solid lightblue;
+    border-radius: .625rem;
+    color: lightblue;
+}
+
+.four {
+    text-align: center;
+    color: lightblue;
+}

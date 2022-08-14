@@ -1,7 +1,4 @@
 /*----------FOR THE POPUP COMPONENT---------*/
-.close-btn {
-  margin-left: 2rem;
-}
 
 .popup {
     position: absolute;
@@ -18,17 +15,18 @@
 
   .popup-inner {
     position: relative;
-    padding: -1rem;
+    padding: 0;
     height: 40vh;
     width: 80%;
     max-width: 40rem;
-    background-color: #fff;
-    margin-top: 13rem;
+    background-color: transparent;
+    margin-top: 16rem;
     border-radius: .625rem;
   }
 
   .popup-inner.close-btn {
     position: absolute;
+    display: block;
     top: .5rem;
     right: .5rem;
     margin-top: -1rem;

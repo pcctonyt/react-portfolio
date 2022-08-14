@@ -1,0 +1,15 @@
+.section-six-wrapper {
+    background-color: green;
+    border: .3125rem solid yellow;
+    border-radius: .625rem;
+    color: yellow;
+}
+
+.six {
+    text-align: center;
+    color: yellow;
+}
+
+.form-control.six-radio {
+    font-size: .7rem;
+}

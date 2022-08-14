@@ -5,6 +5,7 @@
     background-color: rgb(41, 34, 34);
     text-align: center;
     border-radius: 1.25rem;
+    margin-top: 1rem;
   }
 
   .footer-top {
@@ -34,12 +35,11 @@
     }
   }
 
-  .coffee-cup-wrapper {
-    padding-top: 1.75rem;
+  .lets {
+    padding-bottom: 1rem;
   }
-  
-  #footerline {
-    border-bottom: 5px var(--primary-orange) solid;
+  .board-wrapper {
+    padding-top: 1.75rem;
   }
 
   h2, h6 {

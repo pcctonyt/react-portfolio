@@ -1,0 +1,14 @@
+.section-one-wrapper {
+    background-color: brown;
+    border: .3125rem solid yellow;
+    border-radius: .625rem;
+    color: white;
+}
+
+.one {
+    text-align: center;
+    color: white;
+}
+
+
+

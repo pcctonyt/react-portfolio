@@ -1,0 +1,15 @@
+.section-three-wrapper {
+    background-color: red;
+    border: .3125rem solid maroon;
+    border-radius: .625rem;
+    color: rgb(49, 3, 3);
+}
+
+.three {
+    text-align: center;
+    color: rgb(49, 3, 3);
+}
+
+.form-control.three-radio {
+    font-size: 1rem;
+}

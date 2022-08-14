@@ -1,0 +1,19 @@
+.section-two-wrapper {
+    background-color: yellow;
+    border: .3125rem solid green;
+    border-radius: .625rem;
+    color: green;
+}
+
+.two {
+    text-align: center;
+    color: green;
+}
+
+.form-control.two-radio {
+    font-size: .8rem;
+}
+
+.text-lowercase.bold {
+    font-weight: bold;
+}

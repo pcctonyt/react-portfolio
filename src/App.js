@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import DetCards from "./components/DetCards/DetCards";
 import DetSpecs from "./components/DetSpecs/DetSpecs";
 import ScoreSheet from "./components/ScoreSheet/ScoreSheet";
+import Treaty from "./components/Treaty/Treaty";
 import Popup from "./components/Popup/Popup";
 import AboutDeterrence from "./components/AboutDeterrence/AboutDeterrence";
 import ContactForm from "./components/ContactForm/ContactForm";
@@ -21,6 +22,8 @@ const App = () =>  {
 
   const [scorePopup, setScorePopup ] = useState(false);
 
+  const [treatyPopup, setTreatyPopup ] = useState(false);
+
   const [ contactTimed, setContactTimed ] = useState(false);
 
     useEffect(() => {
@@ -33,7 +36,7 @@ const App = () =>  {
     <div>
       <Navbar />
       <Header />
-      <h1 className="button-header">Click a button to learn more!</h1>
+      <h1 className="button-header">Click a button below to learn more!</h1>
             <div className="popup-btn-group">
             
               <span className="contact-btn-wrapper">
@@ -63,7 +66,14 @@ const App = () =>  {
                     <ScoreSheet />
                   </Popup>
                 </span>              
-              
+                
+                <span className="contact-btn-wrapper">
+                  <button className="btn-main-description" id="treaty" onClick={() => setTreatyPopup(true)}>Deterrence Treaty Chart v5.0.1</button>
+                  <Popup trigger={treatyPopup} setTrigger={ setTreatyPopup }>
+                    <Treaty />
+                  </Popup>
+                </span> 
+
                 <Popup trigger={contactTimed} setTrigger={setContactTimed}>
                 <ContactForm />
                 </Popup> 

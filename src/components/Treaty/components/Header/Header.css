@@ -1,0 +1,11 @@
+.treaty-header-wrapper {
+    background-color: beige;
+    padding: 1rem;
+}
+
+.header-wrapper h1 {
+    text-align: center;
+    color: brown;
+    font-family: Lucida, sans-serif;
+    font-size: 3rem;
+}

@@ -5,8 +5,8 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-lg navbar-light bg-dark'>
-      <div className='container'>
+    <nav className='navbar narbar-expand-xl navbar-light bg-dark'>
+      <div className="container">
         <a className='navbar-brand' href='#navbarNav'>Click Me 
         </a>
         <button
@@ -20,7 +20,7 @@ const Navbar = () => {
         >
           <FontAwesomeIcon icon={faBars} style={{ color: 'var(--primary-brown)' }} />
         </button>
-        <div className='collapse navbar-collapse' id='navbarNav'>
+        <div className='collapse navbar-reponsive-collapse' id='navbarNav'>
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
               <a className='nav-link' aria-current='page' href='#navbarNav'>

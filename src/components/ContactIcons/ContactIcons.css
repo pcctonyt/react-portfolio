@@ -11,6 +11,7 @@
 
 .greeting {
   margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 
 .icon-layout {
@@ -24,7 +25,9 @@
 }
 
 @media(max-width: 400px){
-  .icon-layout{padding: 2rem;}
+  .icon-layout {
+    padding: 2rem;
+  }
 }
 
 .contact-icons {
